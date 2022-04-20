@@ -5,30 +5,15 @@ import java.time.Month;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Employee {
+public class Employee extends GajiPerbulan {
 	
 	private enum JenisKelamin{
 		Laki-laki,
 		Perempuan
 	}
-
-	private String employeeId;
-	private String firstName;
-	private String lastName;
-	private String idNumber;
-	private String address;
-	
-	private int yearJoined;
-	private int monthJoined;
-	private int dayJoined;
-	private int monthWorkingInYear;
 	
 	private boolean isForeigner;
 	private JenisKelamin gender; 
-	
-	private int monthlySalary;
-	private int otherMonthlyIncome;
-	private int annualDeductible;
 	
 	private String spouseName;
 	private String spouseIdNumber;
@@ -74,14 +59,6 @@ public class Employee {
 				monthlySalary = (int) (3000000 * 1.5);
 			}
 		}
-	}
-	
-	public void setAnnualDeductible(int deductible) {	
-		this.annualDeductible = deductible;
-	}
-	
-	public void setAdditionalIncome(int income) {	
-		this.otherMonthlyIncome = income;
 	}
 	
 	public void setSpouse(String spouseName, String spouseIdNumber) {
